@@ -7,7 +7,7 @@ Release:	1
 Epoch:		0
 License:	GPL
 Group:		Base
-Source0:	http://shum.huji.ac.il//~schapiro/cc/linux/%{modulename}/%{modulename}-%{version}.tar.gz
+Source0:	http://shum.huji.ac.il/~schapiro/linux/%{modulename}/%{modulename}-%{version}.tar.gz
 # Source0-md5:	e9bfebe349f79e308ff8d329e5b25f91
 URL:		http://shum.huji.ac.il/~schapiro/linux/
 BuildRequires:	pam-devel
