@@ -25,12 +25,14 @@ wzglêdem serwera POP3.
 %setup -q -n %{modulename}
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -fPIC"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D pam_pop3.so $RPM_BUILD_ROOT/lib/security/pam_pop3.so
+install -D pam_pop3.so $RPM_BUILD_ROOT/%{_lib}/security/pam_pop3.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -38,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) /lib/security/pam_pop3.so
+%attr(755,root,root) /%{_lib}/security/pam_pop3.so
