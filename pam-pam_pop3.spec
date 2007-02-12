@@ -1,6 +1,6 @@
 %define 	modulename pam_pop3
 Summary:	PAM module for authenticating users against POP3 server
-Summary(pl):	Modu³ PAM uwierzytelniaj±cy u¿ytkowników wzglêdem serwera POP3
+Summary(pl.UTF-8):   ModuÅ‚ PAM uwierzytelniajÄ…cy uÅ¼ytkownikÃ³w wzglÄ™dem serwera POP3
 Name:		pam-%{modulename}
 Version:	1.0
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 pam_pop3 aims to provide a authenticating users against an POP3
 server.
 
-%description -l pl
-pam_pop3 to modu³ PAM maj±cy na celu uwierzytelnianie u¿ytkowników
-wzglêdem serwera POP3.
+%description -l pl.UTF-8
+pam_pop3 to moduÅ‚ PAM majÄ…cy na celu uwierzytelnianie uÅ¼ytkownikÃ³w
+wzglÄ™dem serwera POP3.
 
 %prep
 %setup -q -n %{modulename}
