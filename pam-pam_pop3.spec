@@ -1,6 +1,6 @@
 %define 	modulename pam_pop3
 Summary:	PAM module for authenticating users against POP3 server
-Summary(pl.UTF-8):   Moduł PAM uwierzytelniający użytkowników względem serwera POP3
+Summary(pl.UTF-8):	Moduł PAM uwierzytelniający użytkowników względem serwera POP3
 Name:		pam-%{modulename}
 Version:	1.0
 Release:	1
